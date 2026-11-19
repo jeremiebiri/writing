@@ -1,0 +1,26 @@
+:root {font:16px system-ui,sans-serif;color:#14263b;background:#eef3f5}
+* {box-sizing:border-box}
+body {margin:0}
+main {max-width:1120px;margin:auto;padding:clamp(16px,4vw,48px)}
+header {padding:32px;border-radius:18px;background:#122b40;color:#fff}
+header p {font-size:.75rem;letter-spacing:.13em;color:#a9e8d6;margin:0}
+h1 {font-size:clamp(2rem,5vw,3.5rem);margin:8px 0 0}
+h2 {font-size:1.125rem;margin:0 0 16px}
+h3 {font-size:.95rem}
+section {background:white;border:1px solid #cfdde1;border-radius:14px;padding:22px;margin-top:16px;min-width:0}
+.grid {display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.project-picker,.project-picker form {display:flex;gap:12px;align-items:end;flex-wrap:wrap}
+label {display:grid;gap:6px;margin-bottom:10px;font-size:.875rem;font-weight:600}
+.project-picker label {margin:0}
+input,select,textarea,button {font:inherit;padding:9px;border-radius:7px}
+input,select,textarea {border:1px solid #a9bac1;background:#fff;width:100%;color:inherit}
+textarea {resize:vertical}
+fieldset {border:0;padding:0;margin:0;min-width:0}
+button {border:0;background:#116653;color:white;cursor:pointer;font-weight:650}
+button:disabled {opacity:.45;cursor:default}
+:focus-visible {outline:3px solid #367bbb;outline-offset:2px}
+.error {background:#ffe5dd;padding:12px;color:#792914}
+pre {font:.875rem ui-monospace,monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#eef3f5;padding:12px;border-radius:7px}
+details,article {padding:10px 0;border-top:1px solid #e1e9eb}
+summary {cursor:pointer}
+@media(max-width:720px){.grid {grid-template-columns:1fr;gap:0}}
